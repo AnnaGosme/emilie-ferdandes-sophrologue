@@ -1,14 +1,14 @@
 import sunflower from "../../assets/sunflower.svg";
+import LandingPage from "./LandingPage";
 
 const Logo = () => {
   return (
-    // <div style={{display: "flex", alignItems:"center", justifyContent:"center"}}>
     <div>
-      <img
-        src={sunflower}
-        style={{ width: "10rem", height: "10rem" }}
-        alt="Emilie Fernandes Sophrologue"
-      ></img>
+        <img
+          src={sunflower}
+          style={{ width: "10rem", height: "10rem" }}
+          alt="Emilie Fernandes Sophrologue"
+        ></img>
     </div>
   );
 };

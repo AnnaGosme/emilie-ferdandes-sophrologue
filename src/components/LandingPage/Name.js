@@ -1,15 +1,19 @@
+import Logo from "./Logo";
+
 const Name = () => {
   return (
-    <div style={{ alignSelf: "center", justifySelf: "center" }}>
+    <div>
       <h1
         style={{
           fontFamily: "Raleway, sans-serif",
           fontSize: "5rem",
           textAlign: "center",
-          alignSelf: "center"
+          alignSelf: "center",
+          justifySelf: "center",
+          marginTop: "-4rem"
         }}
       >
-        <p>Emilie Fernandes</p> <p>Sophrologue</p>
+        Emilie Fernandes <p>Sophrologue</p>
       </h1>
     </div>
   );

@@ -5,38 +5,84 @@ import Consultations from "./Consultations";
 import Faq from "./Faq";
 import Contact from "./Contact";
 
+import Name from "./LandingPage/Name";
+import sunflower from "../assets/sunflower.svg";
+
 const NavBar = () => {
   return (
-    <Router>
-      <div
-        style={{
-          fontFamily: "Raleway, sans-serif",
-          fontSize: "2rem",
-          textAlign: "center",
-          justifySelf: "center",
-          alignItems: "center",
-        }}
-      >
-        <nav>
-          <Link to="/accueil">Accueil</Link>
-          <Link to="/a-propos">A propos</Link>{" "}
-          <Link to="/consultations">Types de consultations</Link>{" "}
-          <Link to="/faq">FAQ</Link> <Link to="/contact">Contact</Link>
-        </nav>
+    <div>
+      <Router>
+        <div
+          style={{
+            fontFamily: "Raleway, sans-serif",
+            fontSize: "2rem",
 
-        <Routes>
-          <Route path="/accueil" element={<LandingPage />}></Route>
+            
+            display: "flex",
+            justifyContent: "space-around",
+            alignContent: "space-around",
+            flexDirection: "column",
+          }}
+        >
+          <nav style={{ display: "flex",
+            justifyContent: "space-around",
+            alignContent: "space-around",
+           }}>
+            <Link to="/">
+              {" "}
+              <img
+                src={sunflower}
+                style={{ width: "10rem", height: "10rem" }}
+                alt="Emilie Fernandes Sophrologue"
+              ></img>
+            </Link>
+            <Link to="/" style={{ textDecoration: "none", margin: "1rem"  }}>
+              Accueil
+            </Link>
+            <Link
+              to="/a-propos"
+              style={{ textDecoration: "none", margin: "1rem" }}
+            >
+              A propos
+            </Link>
 
-          <Route path="/a-propos" element={<About />}></Route>
+            <Link
+              to="/consultations"
+              style={{ textDecoration: "none", margin: "1rem" }}
+            >
+              Types de consultations
+            </Link>
 
-          <Route path="/consultations" element={<Consultations />}></Route>
+            <Link to="/faq" style={{ textDecoration: "none", margin: "1rem" }}>
+              FAQ
+            </Link>
 
-          <Route path="/faq" element={<Faq />}></Route>
+            <Link
+              to="/contact"
+              style={{ textDecoration: "none", margin: "1rem" }}
+            >
+              Contact
+            </Link>
+          </nav>
+          <div>
+            <Name />
+          </div>
 
-          <Route path="/contact" element={<Contact />}></Route>
-        </Routes>
-      </div>
-    </Router>
+          <Routes>
+            <Route path="/" element={<LandingPage />}></Route>
+
+            <Route path="/a-propos" element={<About />}></Route>
+
+            <Route path="/consultations" element={<Consultations />}></Route>
+
+            <Route path="/faq" element={<Faq />}></Route>
+
+            <Route path="/contact" element={<Contact />}></Route>
+          </Routes>
+        </div>
+      </Router>
+      <div></div>
+    </div>
   );
 };
 

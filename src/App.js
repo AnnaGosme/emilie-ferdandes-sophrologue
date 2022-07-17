@@ -1,12 +1,17 @@
 import "./App.css";
 import NavBar from "./components/NavBar";
-import LandingPage from "./components/LandingPage//LandingPage";
+import Quotes from "./components/Quotes";
 
 function App() {
   return (
-    <div>
+    <div
+      style={{
+        fontFamily: "Raleway, sans-serif",
+    
+      }}
+    >
       <NavBar />
-      <LandingPage />
+      <Quotes />
     </div>
   );
 }
