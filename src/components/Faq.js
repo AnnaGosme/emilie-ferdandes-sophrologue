@@ -16,28 +16,18 @@ const Faq = () => {
           flexWrap: "wrap",
         }}
       >
-        <div style={{ width: "40rem" }}>
-          <h2>COMBIEN DE TEMPS DURE UNE SÉANCE DE SOPHROLOGIE ?</h2>
-          <p>
-            La première séance, qui établit votre objectif, dure environ 1h30.
-            Elle permet que nous fassions connaissance et que vous découvriez
-            concrètement la sophrologie. Puis les autres séances durent 1h00,
-            elles commencent et se terminent par un bref temps d'échange.
-          </p>
-        </div>
-        <div style={{ width: "40rem" }}>
-          <h2>A QUELLE FRÉQUENCE DOIS-JE PROGRAMMER MES SÉANCES ?</h2>
-          <p>
-            Là encore, tout est question d'adaptabilité. L'important va être de
-            pratiquer chez soi entre les séances. La plupart des personnes
-            programment leurs séances 1 fois par semaine, ou tous les 15 jours.
-          </p>
-        </div>
-        <div style={{ width: "auto" }}>
-          <h2>
+        <div
+          style={{
+            width: "auto",
+            border: "1px solid #D3D3D3",
+            padding: "10px",
+            borderRadius: "5px",
+          }}
+        >
+          <h4>
             COMBIEN DE TEMPS FAUT-IL POUR ATTEINDRE MON OBJECTIF, GÉRER MA
             PROBLÉMATIQUE ?
-          </h2>
+          </h4>
           <p>
             En général, un accompagnement personnalisé comprends 8 à 10 séances.
             Tout est ensuite question d'adaptabilité, c'est pour cela que je ne
@@ -51,6 +41,39 @@ const Faq = () => {
             (les visualisations positives) afin que vous puissiez les réécouter
             au calme chez vous, et je vous fais parvenir sous forme de vignettes
             explicatives tous les exercices que vous découvrez en séance.
+          </p>
+        </div>
+        <div
+          style={{
+            width: "45%",
+            border: "1px solid #D3D3D3",
+            padding: "10px",
+            borderRadius: "5px",
+            margin: "5px"
+          }}
+        >
+          <h4>COMBIEN DE TEMPS DURE UNE SÉANCE DE SOPHROLOGIE ?</h4>
+          <p>
+            La première séance, qui établit votre objectif, dure environ 1h30.
+            Elle permet que nous fassions connaissance et que vous découvriez
+            concrètement la sophrologie. Puis les autres séances durent 1h00,
+            elles commencent et se terminent par un bref temps d'échange.
+          </p>
+        </div>
+        <div
+          style={{
+            width: "45%",
+            border: "1px solid #D3D3D3",
+            padding: "10px",
+            borderRadius: "5px",
+            margin: "5px"
+          }}
+        >
+          <h4>A QUELLE FRÉQUENCE DOIS-JE PROGRAMMER MES SÉANCES ?</h4>
+          <p>
+            Là encore, tout est question d'adaptabilité. L'important va être de
+            pratiquer chez soi entre les séances. La plupart des personnes
+            programment leurs séances 1 fois par semaine, ou tous les 15 jours.
           </p>
         </div>
       </div>

@@ -6,7 +6,7 @@ const Name = () => {
       <h1
         style={{
           fontFamily: "Raleway, sans-serif",
-          fontSize: "5rem",
+          fontSize: "4rem",
           textAlign: "center",
           alignSelf: "center",
           justifySelf: "center",

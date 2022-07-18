@@ -4,12 +4,7 @@ import Quotes from "./components/Quotes";
 
 function App() {
   return (
-    <div
-      style={{
-        fontFamily: "Raleway, sans-serif",
-    
-      }}
-    >
+    <div>
       <NavBar />
       <Quotes />
     </div>

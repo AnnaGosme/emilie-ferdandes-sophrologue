@@ -15,28 +15,31 @@ const NavBar = () => {
         <div
           style={{
             fontFamily: "Raleway, sans-serif",
-            fontSize: "2rem",
+            fontSize: "1rem",
 
-            
             display: "flex",
             justifyContent: "space-around",
             alignContent: "space-around",
             flexDirection: "column",
           }}
         >
-          <nav style={{ display: "flex",
-            justifyContent: "space-around",
-            alignContent: "space-around",
-           }}>
-            <Link to="/">
-              {" "}
+          <nav
+            style={{
+              display: "flex",
+              justifyContent: "space-around",
+              alignContent: "space-around",
+            }}
+          >
+            <a href={<LandingPage />}>
+              
               <img
                 src={sunflower}
                 style={{ width: "10rem", height: "10rem" }}
                 alt="Emilie Fernandes Sophrologue"
+                
               ></img>
-            </Link>
-            <Link to="/" style={{ textDecoration: "none", margin: "1rem"  }}>
+            </a>
+            <Link to="/" style={{ textDecoration: "none", margin: "1rem" }}>
               Accueil
             </Link>
             <Link
@@ -69,6 +72,7 @@ const NavBar = () => {
           </div>
 
           <Routes>
+
             <Route path="/" element={<LandingPage />}></Route>
 
             <Route path="/a-propos" element={<About />}></Route>

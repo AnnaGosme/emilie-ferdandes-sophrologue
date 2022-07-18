@@ -1,6 +1,12 @@
 const Consultations = () => {
   return (
-    <div style={{ paddingLeft: "10rem", paddingRight: "10rem", lineHeight:"55px" }}>
+    <div
+      style={{
+        paddingLeft: "10rem",
+        paddingRight: "10rem",
+        lineHeight: "55px",
+      }}
+    >
       <div>
         <h2>TYPES DE CONSULTATIONS</h2>
       </div>

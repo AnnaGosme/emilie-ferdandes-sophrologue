@@ -1,13 +1,15 @@
 import { useState } from "react";
 
 const quotes = [
-  { id: 1, quote: `
-  "Le bonheur, c'est lorsque nos pensées, nos actes et nos paroles sont en harmonie" ` },
+  {
+    id: 1,
+    quote: `
+  "Le bonheur, c'est lorsque nos pensées, nos actes et nos paroles sont en harmonie" `,
+  },
   { id: 2, quote: "I think, therefore I am." },
   { id: 3, quote: "When life gives you lemons, make lemonade." },
   { id: 4, quote: "Have no fear of perfection, you'll never reach it." },
 ];
-
 
 const Quotes = () => {
   const [quote, setQuote] = useState(`
@@ -27,9 +29,11 @@ const Quotes = () => {
         display: "flex",
         justifyContent: "center",
         alignContent: "center",
+        fontFamily: "Raleway, sans-serif",
+        fontSize: "1rem",
       }}
     >
-      <div style={{ border: "1px solid gray", padding: "20px" }}>{quote}</div>
+      <div style={{ border: "1px solid #D3D3D3", padding: "20px", borderRadius: "5px" }}>{quote}</div>
     </div>
   );
 };
